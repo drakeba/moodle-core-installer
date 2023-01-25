@@ -1,0 +1,25 @@
+{
+    "name": "drakeba/moodle-core-installer",
+    "description": "A custom installer to handle deploying Moodle with Composer",
+    "authors": [
+        {
+            "name": "Drake",
+            "email": "drake@borrellassociates.com"
+        }
+    ],
+    "license": "GPL-2.0-or-later",
+    "type": "composer-plugin",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4.0",
+        "composer-plugin-api": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Drakeba\\": "src/"
+        }
+    },
+    "extra": {
+        "class": "Drakeba\\Composer\\MoodleCorePlugin"
+    }
+}
